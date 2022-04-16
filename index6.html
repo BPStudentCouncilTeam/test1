@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<!-- อัพเดทโค้ด 30 เม.ย. 64 -->
+
+    <title>ระบบเลือกตั้งประธานนักเรียนออนไลน์</title>
+	<link rel='icon' href='https://drive.google.com/uc?id=13CNvhXeUYWwpKk5cdn0VVF6u6OyTS-IA'/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<!-- ICON Font Awesome -->
+    <script src="https://kit.fontawesome.com/ad42651166.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Itim|Kanit|Mali|Mitr|Niramit|Pattaya|Prompt|Questrial|Sarabun|Sriracha' rel='stylesheet' type='text/css'>
+	<!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- jquery.Thailand.js -->   
+    <link rel="stylesheet" href="./jquery.Thailand.js/dist/jquery.Thailand.min.css">
+	<!-- CSS Files 
+    <link href="style.css" rel="stylesheet" /> -->
+	<!-- CSS Files -->
+	<style type='text/css'>
+.itim {
+  font-family: 'Itim', sans-serif;
+}
+.kanit {
+  font-family: 'Kanit', sans-serif;
+}
+.mali {
+  font-family: 'Mali', sans-serif;
+}
+.mitr {
+  font-family: 'Mitr', sans-serif;
+}
+.pattaya {
+  font-family: 'Pattaya', sans-serif;
+}
+.prompt {
+  font-family: 'Prompt', sans-serif;
+}
+.questrial {
+  font-family: 'Questrial', sans-serif;
+}
+.sarabun {
+  font-family: 'Sarabun', sans-serif;
+}
+.sriracha {
+  font-family: 'Sriracha', sans-serif;
+}
+@font-face {
+  font-family: 'Sarabun';
+}
+body { font-family: 'Prompt' !important; }
+
+::placeholder {
+  color: peachpuff;
+  font-size: 15px;
+  text-align: center; 
+}
+.error{
+  color:#F00;
+}
+.error.true{
+  color:#6bc900;
+}
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+#img{
+	width: 100%
+	margin-top: 20px;
+}
+.logo{
+	display: block;
+	margin:0 auto;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand">สภานักเรียนโรงเรียนบางพลีราษฎร์บำรุง</a>
+        </div>
+</nav>
+<!------------------------------------------------------------------------------------------------------------>
+<div class="container">
+		<div class="card-body">
+			<img class="logo" src="https://drive.google.com/uc?id=13CNvhXeUYWwpKk5cdn0VVF6u6OyTS-IA" style="width:150px;height:150px;">
+		</div>
+		<div class="card-body">
+			<h5 class="card-text text-center prompt">ระบบเลือกตั้งประธานนักเรียนออนไลน์</h5>
+			<h5 class="card-text text-center prompt">สภานักเรียนโรงเรียนบางพลีราษฎร์บำรุง</h5>
+		</div>
+		<br>
+	  <div class="container">
+	  <div class="card text-black bg-primary mb-12" style="max-width: 100rem;">
+		  <h5 class="text-center card-header text-white prompt">ผู้ลงสมัครรับเลือกตั้งประธานนักเรียน ประจำปีการศึกษา 2565</h5>
+	  </div>
+	  </div>
+</div>
+<br>
+
+<!------------------------------------------------------------------------------------------------------------>
+<div class="container">
+  <div class="row">
+	<div class="col-sm-6">
+		<div class="alert alert-primary" role="alert">
+		<p>ผู้สมัครรับเลือกตั้งเป็นประธานสภานักเรียน</p>
+		<p>หมายเลข 1 "นางสาวพลอยชมพู  พูลบรรดิษฐ์"</p>
+		<img src="https://drive.google.com/uc?id=1uK7OtjmxnWoqINdR14TdWoecI01Gos9I" class="img-fluid" alt="img-fluid">
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="alert alert-primary" role="alert">
+		<p>ผู้สมัครรับเลือกตั้งเป็นประธานสภานักเรียน</p>
+		<p>หมายเลข 2 "นางสาวภัทราพร  ขุนแสน"</p>
+		<img src="https://drive.google.com/uc?id=1hSY2sYBv5NEIIxL5HmrhEHM2RrfIAqXk" class="img-fluid" alt="img-fluid">
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="alert alert-primary" role="alert">
+		<p>ผู้สมัครรับเลือกตั้งเป็นประธานสภานักเรียน</p>
+		<p>หมายเลข 3 "นายธนพล  พันธ์ส้ม"</p>
+		<img src="https://drive.google.com/uc?id=1HNLIu2wjAlsRN3ydM9SqPJ_Q1LFdWcHM" class="img-fluid" alt="img-fluid">
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="alert alert-primary" role="alert">
+		<p>ผู้สมัครรับเลือกตั้งเป็นประธานสภานักเรียน</p>
+		<p>หมายเลข 4 "นางสาวจัสมิน ธนาพรภานุรัศมิ์"</p>
+		<img src="https://drive.google.com/uc?id=18mWnEgDHgFu4hDyhNMKUF9b2nYBRrwgE" class="img-fluid" alt="img-fluid">
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="alert alert-primary" role="alert">
+		<p>ผู้สมัครรับเลือกตั้งเป็นประธานสภานักเรียน</p>
+		<p>หมายเลข 5 "นางสาววรลักษณ์  จามเกษม"</p>
+		<img src="https://drive.google.com/uc?id=1tp1wZGso5OD6JNvUpqRvHfpjDjMQsv3l" class="img-fluid" alt="img-fluid">
+		</div>	
+	</div>
+	<div class="col-sm-6">
+		<div class="alert alert-primary" role="alert">
+		<p>ผู้สมัครรับเลือกตั้งเป็นประธานสภานักเรียน</p>
+		<p>หมายเลข 6 "นายณภัทร  เมืองเรือง"</p>
+		<img src="https://drive.google.com/uc?id=1rQ86wVp3GPLoS6fxgSBkxh5Hd7reW-Mg" class="img-fluid" alt="img-fluid">
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="alert alert-primary" role="alert">
+		<p>ผู้สมัครรับเลือกตั้งเป็นประธานสภานักเรียน</p>
+		<p>หมายเลข 7 "นางสาวมนัสนันท์  วิริยเกียรติ"</p>
+		<img src="https://drive.google.com/uc?id=1SJ9DYx2wopHtxuMNJ3Z6THYRkhmLVEzA" class="img-fluid" alt="img-fluid">
+		</div>
+	</div>
+  </div>
+  <br>
+  <div class="card text-black bg-primary mb-12" style="max-width: 100rem;">
+  </div>
+  <br>
+  <center><a href="https://script.google.com/macros/s/AKfycbycvaj_GcqhIW1K3Zg7eT7TfbMe8Vb6OncjnCzkm-Iaedox4b-tgH_pn3jfQvCAuS4p9w/exec"><button type="button" class="btn btn-outline-success">ตรวจสอบรายชื่อ</button></center>
+</div>
+<br>
+<!-- Footer -->
+<footer>
+  <div class="bg-primary">
+    <div class="container">
+        <br>
+      <div class="row">
+        <div class="clo-lg-auto">
+          <h6 class="text-center text-white kanit"><i class="fa fa-graduation-cap mr-3"></i> สภานักเรียนโรงเรียนบางพลีราษฎร์บำรุง / 154 หมู่ 8 ต.บางพลีใหญ่ อ.บางพลี จ.สมุทรปราการ 10540 / สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาสมุทรปราการ</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+        <!-- ปิดแทก Footer -->
+
+</body>
